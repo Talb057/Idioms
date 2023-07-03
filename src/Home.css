@@ -1,0 +1,276 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*::after {
+  box-sizing: border-box;
+}
+*::before {
+  box-sizing: border-box;
+}
+
+.body-box {
+  width: 100vw;
+  min-height: 790px;
+  height: 100vh;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  display: block;
+}
+
+.home {
+  background: url("./images/library.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  text-decoration: none !important;
+  color: black;
+}
+
+.main-container {
+  height: 100%;
+  display: flex;
+  overflow: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-container-center {
+  display: flex;
+  flex-direction: column;
+  padding-left: 260px;
+  padding-right: 260px;
+}
+
+.center-text {
+  text-align: center;
+  padding: 40px;
+}
+
+.center-text h1 {
+  color: white;
+  font-size: 26px;
+  font-family: "Outfit", "sans-serif";
+}
+
+.center-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Book-button {
+  background-color: #d4af37;
+  border: 2px solid #d4af37;
+  margin: 10px;
+}
+
+.languages-button {
+  background-color: transparent;
+  border: 2px solid #d4af37;
+  margin: 10px;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  cursor: pointer;
+}
+
+.btn-book {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn-book::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.3s;
+}
+
+.btn-book:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.btn-book::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+
+.btn-book:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.btn-languages {
+  color: #fff;
+  transition: all 0.5s;
+  position: relative;
+}
+
+.btn-languages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.3s;
+}
+
+.btn-languages:hover::before {
+  opacity: 0;
+  transform: scale(0.5, 0.5);
+}
+
+.btn-languages::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transform: scale(1.2, 1.2);
+}
+
+.btn-testimonials:hover::after {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+
+.AboutMe-Title {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AboutMe-Title h1 {
+  font-size: 30px;
+  font-family: "Outfit", "sans-serif";
+  font-weight: 500;
+  color: black;
+}
+
+.languages {
+  background-color: #d4af37;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  overflow-x: scroll;
+  overflow-y: scroll;
+  display: block;
+}
+
+.languages-title {
+  padding: 40px;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.languages-title h1 {
+  font-family: "Outfit", "sans-serif";
+  font-size: 30px;
+  color: white;
+}
+
+.languages-cards {
+  padding: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.container {
+  max-width: 950px;
+}
+
+.card {
+  border-radius: 1rem;
+}
+
+@media (max-width: 767px) {
+  .card {
+    margin: 1rem 0.7rem 1rem;
+    max-width: 80vw;
+  }
+}
+.test-profile {
+  width: 6.2rem;
+  border-radius: 5rem;
+  margin: 1.3rem auto 1rem auto;
+}
+
+.col-md-4 {
+  padding: 0 0.5rem;
+}
+
+.card-title {
+  font-size: 1rem;
+  margin-bottom: 0;
+  font-weight: bold;
+  font-family: "IM Fell French Canon SC";
+}
+
+.card-text {
+  text-align: center;
+  padding: 1rem 2rem;
+  font-size: 0.8rem;
+  color: rgb(82, 81, 81);
+  line-height: 1.4rem;
+}
+
+.footer {
+  border-top: none;
+  text-align: center;
+  line-height: 1.2rem;
+  padding: 2rem 0 1.4rem 0;
+  font-family: "Varela Round";
+}
+
+#name {
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+html {
+  overflow: hidden;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  overflow: auto;
+}/*# sourceMappingURL=Home.css.map */
